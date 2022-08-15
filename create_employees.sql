@@ -9,4 +9,4 @@ CREATE TABLE IF NOT EXISTS Employees (
 	Department_id INTEGER references Departments(id)
 );
 
-alter TABLE Employees ADD Boss_id INTEGER references employees(id);
+ALTER TABLE Employees ADD Boss_id INTEGER references employees(id);

@@ -40,7 +40,6 @@ CREATE TABLE IF NOT EXISTS Collection (
 	id SERIAL PRIMARY KEY,
 	name VARCHAR(40) unique NOT NULL,
 	year_of INTEGER check(year_of>1900),
-	Song_id INTEGER REFERENCES Songs(id)
 );
 
 CREATE TABLE IF NOT EXISTS SongCollection (

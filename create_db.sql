@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Bands (
 CREATE TABLE IF NOT EXISTS GenreBand (
 	Genre_id INTEGER REFERENCES Genre(id),
 	Band_id INTEGER REFERENCES Bands(id),
-	CONSTRAINT pk PRIMARY KEY (Genre_id, Band_id)
+	CONSTRAINT pk_GenreBand PRIMARY KEY (Genre_id, Band_id)
 );
 
 
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS Album (
 CREATE TABLE IF NOT EXISTS BandAlbum (
 	Album_id INTEGER REFERENCES Album(id),
 	Band_id INTEGER REFERENCES Bands(id),
-	CONSTRAINT pkey PRIMARY KEY (Album_id, Band_id)
+	CONSTRAINT pk_BandAlbum PRIMARY KEY (Album_id, Band_id)
 );
 
 
@@ -46,5 +46,5 @@ CREATE TABLE IF NOT EXISTS Collection (
 CREATE TABLE IF NOT EXISTS SongCollection (
 	Song_id INTEGER REFERENCES Songs(id),
 	Collection_id INTEGER REFERENCES Collection(id),
-	CONSTRAINT pkey PRIMARY KEY (Song_id, Collection_id)
+	CONSTRAINT pk_SongCollection PRIMARY KEY (Song_id, Collection_id)
 );

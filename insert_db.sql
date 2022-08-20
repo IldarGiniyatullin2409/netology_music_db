@@ -34,12 +34,12 @@ INSERT INTO genreband values
 INSERT INTO album(name, year_of) values
 ('Master of Puppets', 2018),
 ('Killing Is My Business…', 2020),
-('Герой асфальта', 1997),
-('Good 2b alive', 2008),
+('Герой асфальта', 2019),
+('Good 2b alive', 2021),
 ('Have a Nice Day', 2005),
-('Angels never die', 1993),
+('Angels never die', 1992),
 ('Песни мертвых', 1996),
-('Ещё один день', 1992);
+('Ещё один день', 2020);
 
 INSERT INTO bandalbum values
 (1, 1),
@@ -58,7 +58,7 @@ INSERT INTO songs(name, album_id, duration) values
 ("Тату", 7, 202),
 ("Bad Blood", 6, 250),
 ("All I Want", 6, 225),
-("Have a nice day", 5, 229),
+("Have a nice day", 6, 229),
 ("Wildflower", 5, 254),
 ("LOL", 4, 243),
 ("Samurai", 4, 333),
@@ -66,8 +66,8 @@ INSERT INTO songs(name, album_id, duration) values
 ("Улица роз", 3, 357),
 ("Killing Is My Business…", 2, 186),
 ("Rattlehead", 2, 221),
-("Battery", 1, 312),
-("Orion", 1, 492);
+("Battery", 1, 186),
+("Orion", 2, 492);
 
 INSERT INTO collection(name, year_of) values
 ('Heavy metal', 2018),
